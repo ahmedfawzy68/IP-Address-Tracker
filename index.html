@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/png" href="imgs/location.png">
+    <!-- izi toast plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <!-- Map Plugin CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha2/css/bootstrap.min.css"
+        integrity="sha512-AJqlPMFVh36uw2D9RLPBfAVy0S7OFl7zCOnnZTs0WAtaRzv1lK7tMoGz7k586FulS00KTNsWNr/5IVhIzBlEow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="all">
+        <div class="search-engine-container text-center pb-5">
+            <div>
+                <h1 class="text-white py-5">IP Address Tracker</h1>
+            </div>
+            <div>
+                <form>
+                    <div class="input-field">
+                        <input id="ip-address" type="text" class="form-control py-3 ps-4 border-0"
+                            placeholder="Search for any IP address">
+                        <div class="chevron-btn py-3 px-4">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="details text-center">
+            <i class="fa-solid fa-x"></i>
+            <div class="row">
+                <div class="col-md-4 ip-address">
+                    <p>IP ADDRESS</p>
+                    <h4 id="ipAddress"></h4>
+                </div>
+                <div class="col-md-4 location">
+                    <p>LOCATION</p>
+                    <h4 id="location"></h4>
+                </div>
+                <div class="col-md-4 time-zone">
+                    <p>TIME ZONE</p>
+                    <h4 id="timeZone"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+</body>
+<!-- Bootstrap CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha2/js/bootstrap.bundle.min.js"
+    integrity="sha512-EG++JPXevM9zNXYPPRo2G+qFY6OuQivci8L7/8HMfGjSbbsoFywHdHq/lLgSk1XIZNwzxxnE0mUGJxVoSsoUgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- mine.js -->
+<script src="mine.js"></script>
+
+</html>
